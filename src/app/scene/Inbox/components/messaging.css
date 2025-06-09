@@ -1,0 +1,12 @@
+.chat-bg {
+    background: url('./../../../../assets/images/bg.jpeg') no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+    .dark .chat-bg {
+        background: url('./../../../../assets/images/bg.jpeg') no-repeat;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,7 @@
+export const APP_MAX_WIDTH = 1200;
+
+export const MODAL_INTERNAL_MAX_WIDTH = 500;
+export const MODAL_EXTERNAL_MAX_WIDTH = 800;
+export const MODAL_SMALL_EXTERNAL_MAX_WIDTH = 650;
+
+export const INPUT_MAX_WIDTH = 600;

@@ -1,0 +1,7 @@
+{
+    "baseUrl": "https://beautea-front-dev.azurewebsites.net",
+    "baseCononicalUrl": "https://beautea-front-dev.azurewebsites.net",
+    "apiUrl": "https://aps-beautea-dev.azurewebsites.net",
+    "subscriptionUrl": "wss://aps-beautea-dev.azurewebsites.net/graphql",
+    "supportMail": "support@mychimebeauty.com"
+}

@@ -1,0 +1,25 @@
+.vignette {
+  position: relative;
+}
+
+.vignette::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle at center,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.2) 100%);
+}
+
+.vjs-loading-spinner {
+  display: none !important;
+}
+
+.vjs-playing .vjs-poster {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}

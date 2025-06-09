@@ -1,0 +1,33 @@
+.normal-grid .lazy-load-image-loaded {
+    height: 140px;
+}
+
+.container {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    gap: 2px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: 250px !important;
+    }
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.span-2 {
+    grid-row: span 2;
+    height: 280px;
+}
+
+.grid-item {
+    height: 140px;
+    overflow: hidden;
+}

@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-overflow-scrolling: touch;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100dvh;
+  background-color: rgb(249, 249, 249);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  will-change: transform, opacity;
+}
+
+
+.h-screen {
+  height: 100dvh !important;
+}
+
+.vjs-big-play-centered {
+  padding-top: 100dvh !important;
+}
+
+.vjs-big-play-centered video {
+  object-fit: cover;
+}
+
+.horizontal-layout .vjs-big-play-centered {
+  padding-top: 68% !important;
+  height: 100% !important;
+  aspect-ratio: 4/5.5 !important;
+}
+
+.horizontal-layout .vjs-big-play-centered video {
+  object-fit: cover !important;
+  height: 100% !important;
+  min-height: 260px;
+
+}
+
+@layer utilities {
+  .snap-fast {
+    scroll-snap-type: y mandatory !important;
+    scroll-padding-top: 0px !important;
+    overscroll-behavior: contain !important;
+  }
+}
+
+.horizontal-layout .video-seekbar {
+  bottom: 0px !important;
+}
+
+.landscape-layout .video-seekbar {
+  bottom: 0px !important;
+}
+
+.portrait-layout .video-seekbar {
+  bottom: 0px !important;
+}
+
+.square-layout .video-seekbar {
+  bottom: 0px !important;
+}
+
+.third-fourth .video-seekbar {
+  bottom: 0px !important;
+}
+
+.horizontal-layout .full-screen-icon {
+  bottom: 20px !important;
+  display: block;
+}
+
+.landscape-layout .full-screen-icon {
+  bottom: 20px !important;
+  display: block;
+}
+
+.square-layout .full-screen-icon {
+  bottom: 20px !important;
+  display: block;
+}
+
+.portrait-layout .full-screen-icon {
+  bottom: 20px !important;
+  display: block;
+}
+
+.third-fourth .full-screen-icon {
+  bottom: 20px !important;
+  display: block;
+}
+
+.vjs-poster img {
+  object-fit: cover !important;
+}
+
+
+.horizontal-layout .mute-icon {
+  height: 100% !important;
+}
+
+.square-layout .vjs-big-play-centered {
+  aspect-ratio: 1 / 1 !important;
+  padding-top: 68% !important;
+  height: 100% !important;
+}
+
+.portrait-layout .vjs-big-play-centered {
+  aspect-ratio: 4 / 5 !important;
+  padding-top: 68% !important;
+  height: 100% !important;
+}
+
+.portrait-layout .vjs-luxmty {
+  aspect-ratio: 4 / 5 !important;
+  padding-top: 68% !important;
+  height: 100% !important;
+}
+
+.profile-reel .vjs-big-play-centered {
+  aspect-ratio: 4 / 6 !important;
+  padding-top: 68% !important;
+  height: 100% !important;
+}
+
+.landscape-layout .vjs-big-play-centered {
+  aspect-ratio: 16 / 10 !important;
+  padding-top: 50% !important;
+  height: 100% !important;
+}
+
+.third-fourth .vjs-big-play-centered {
+  aspect-ratio: 3 / 4 !important;
+  padding-top: 68% !important;
+  height: 100% !important;
+}
+
+.youtube-layout .vjs-big-play-centered {
+  aspect-ratio: 16 / 9 !important;
+  padding-top: 50% !important;
+  height: 100% !important;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+  opacity: 1;
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+
+@media screen and (min-width: 991px) {
+  .vjs-big-play-centered video {
+    object-fit: contain;
+  }
+
+  .video-seekbar {
+    bottom: -6px !important;
+  }
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.cover-present h2,
+.cover-present p,
+.cover-present small {
+  color: white;
+}
+
+.scroll p,
+.scroll span,
+.scroll small {
+  font-size: 14px !important;
+  font-family: inherit !important;
+  word-break: break-word !important;
+}
+
+.shadow-light-black {
+  filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.3));
+}
+
+.home-tabs .MuiTabs-flexContainer {
+  justify-content: center !important;
+}
+
+.not-on-home #menubottom {
+  display: none !important;
+}
+
+.fullscroll .home-tabs {
+  display: none;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slide-in 0.5s ease-in-out;
+}
+
+.vjs-error-display,
+.vjs-modal-dialog {
+  display: none;
+}

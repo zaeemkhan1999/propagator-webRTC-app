@@ -1,0 +1,34 @@
+.post-container {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.post-header {
+    font-size: 14px;
+}
+
+.post-footer {
+    font-size: 14px;
+    padding: 12px 0;
+    border-top: 1px solid #e5e5e5;
+}
+
+
+.post-video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.actions button {
+    background: none;
+    border: none;
+    font-size: 14px;
+}
